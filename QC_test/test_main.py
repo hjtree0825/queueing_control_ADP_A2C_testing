@@ -15,8 +15,9 @@ import numpy as np
 if __name__ == '__main__':
     agent = Agent(alpha = 0.0001, beta = 0.0005)
     
-    #env = gym.make('LunarLander-v2')
+    #env = gym.make('LunarLander-v2') # no need to use "gym.make" function, i guess
     
+    # queueing parmeters
     arr_rate1 = 20
     arr_rate2 = 10
     serv_rate1 = 100
@@ -27,6 +28,7 @@ if __name__ == '__main__':
     
     env = QCEnv(arr_rate1, arr_rate2)
     
+    # a2c paramters
     score_history = []
     num_episodes = 100
     
