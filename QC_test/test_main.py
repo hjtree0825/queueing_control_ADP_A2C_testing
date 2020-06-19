@@ -41,7 +41,7 @@ if __name__ == '__main__':
             agent.learn(observation, action, reward, observation_, done)
             observation = observation_
             score += reward
-            print(score)
+            #print(score)   # debugging purposes
             
         score_history.append(score)
         avg_score = np.mean(score_history[-100:])
